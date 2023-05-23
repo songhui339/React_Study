@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Virtual DOM 과제</title>
+        <script src="virtualDom.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <section>
+            <h1>Virtual DOM 모달창 실습</h1>
+            <button class="btn modalBtn-01" onclick="document.querySelector('#modal1').active();">ReactJS</button>
+            <button class="btn modalBtn-02" onclick="document.querySelector('#modal2').active();">JavaScript</button>
+            
+            <test-modal id="modal1" borderColor="#439AFF">
+                <slot slot="title">ReactJS</slot>
+                <slot slot="content"><img src="https://i.pinimg.com/236x/ff/9f/7c/ff9f7c85e2f61d5c5f46013e7d6ed598.jpg" alt=""></slot>
+            </test-modal>
+            
+            <test-modal id="modal2" borderColor="#EB5757">
+                <slot slot="title">JavaScript</slot>
+                <slot  slot="content"><img src="https://blog.kakaocdn.net/dn/0N4w0/btqSZwUeXNN/eXlkKkwiM4uzOe4TTYZwJK/img.png" alt=""></slot>
+            </test-modal>
+        </section>
+
+
+
+        <!-- 모달 창 구조 -->
+        <!-- <div class="modal-wrap">
+            <div class="content-box">
+                <span class="close">&#215;</span>
+                <div class="title">
+                    <slot name="title"></slot>
+                </div>
+                <div class="content">
+                    <slot name="content"></slot>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .modal-wrap {
+                display: none;
+                position: fixed;
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.4);
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+            }
+
+            .content-box {
+                background-color: #efefef;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 50%;
+                border-radius: 15px;
+                -webkit-animation-name: animatetop;
+                -webkit-animation-duration: 1s;
+                animation-name: animatetop;
+                animation-duration: 0.4s;
+            }
+
+            .content-box .close-btn {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: 700;
+            }
+
+            .content-box .close-btn:hover,
+            .content-box .close-btn:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style> -->
+    </body>
+</html>

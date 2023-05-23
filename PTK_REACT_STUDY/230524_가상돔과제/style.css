@@ -1,0 +1,71 @@
+/* reset.css */
+button {
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+    cursor: pointer;
+}
+
+section {
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.btn {
+    background-color: #343f50;
+    box-shadow: inset 3px 3px #4a5568;
+    border: 3px solid #000;
+    width: 150px;
+    height: 50px;
+    color: #CBD5DF;
+    font-size: 1rem;
+}
+
+.btn:hover,
+.btn:active {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.btn:active {
+    box-shadow: inset 3px 3px #343f50;
+    border: 3px solid #343f50;
+}
+
+.modalBtn-01 {
+    color: #439AFF;
+}
+
+.modalBtn-01:hover {
+    background-color: #439AFF;
+    box-shadow: inset 3px 3px #74b3ff;
+    border: 3px solid #439AFF;
+    color: #fff;
+}
+
+.modalBtn-01:active {
+    box-shadow: inset 3px 3px #3B78BE;
+}
+
+.modalBtn-02 {
+    color: #EB5757;
+}
+
+.modalBtn-02:hover {
+    background-color: #EB5757;
+    box-shadow: inset 3px 3px #FD6F6F;
+    border: 3px solid #EB5757;
+    color: #fff;
+}
+
+.modalBtn-02:active {
+    box-shadow: inset 3px 3px #D94242;
+}
+
+img {
+    width: 300px;
+}
