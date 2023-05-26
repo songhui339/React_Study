@@ -1,8 +1,8 @@
 import React from 'react';
-import MyComponent from './MyComponent';
+import EventPractice from './EventPractice';
 
 const App = () => {
-  return <MyComponent name="react" favoriteNumber={51}>리액트</MyComponent>
+  return <EventPractice />;
 };
 
 export default App;
