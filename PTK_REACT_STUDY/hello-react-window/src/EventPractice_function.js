@@ -1,5 +1,4 @@
-// import React, { Component, useState } from 'react';
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 
 // 함수형 컴포넌트로 구현한 이벤트
 // #1 onChange 함수 활용 
@@ -10,7 +9,7 @@ const EventPractice = () => {
     const onChangeUsername = e => setUsername(e.target.value);
     const onChangeMessage = e => setMessage(e.target.value);
     const onClick = () => {
-        alert(username + ': ' + message);
+        alert(username + ': ' + messsage);
         setUsername('');
         setMessage('');
     };
@@ -23,7 +22,7 @@ const EventPractice = () => {
 
     return (
         <div>
-            <h1>onChange 함수 활용 </h1>
+            <h1>이벤트 연습_함수 컴포넌트</h1>
             <input 
                 type="text" 
                 name="username"
@@ -47,7 +46,6 @@ const EventPractice = () => {
 */
 
 // #2 useState 함수 활용
-
 const EventPractice = () => {
     const [form, setForm] = useState({
         username: '',
@@ -67,7 +65,7 @@ const EventPractice = () => {
     };
 
     const onClick = () => {
-        alert(username + ': ' + message);
+        alert(username + ': ' + messsage);
         setForm ({
             username: '',
             message: ''
@@ -82,7 +80,7 @@ const EventPractice = () => {
 
     return (
         <div>
-            <h1>useState 함수 활용</h1>
+            <h1>이벤트 연습_함수 컴포넌트</h1>
             <input 
                 type="text" 
                 name="username"
